@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+        <div class="login">登入</div>
+        <div class="username-text">電子郵件:</div>
+        <div class="password-text">密碼:</div>
+        <div class="username-field">
+            <input type="email" name="useremail" id="useremail" aria-describedby="emailHelp" placeholder="Enter email" />
+        </div>
+        <div class="password-field">
+            <input type="password" class="form-control" name="userpassword" id="userpassword" placeholder="Password" />
+        </div>
+        <input type="checkbox" name="rememberme" id="exampleCheck1" /><label for="remember-me">記住我</label>
+        <div class="forgot-usr-pwd"><a href="#">忘記密碼</a>?</div>
+        <input type="submit" name="submit" value="GO"  />
+    </form>
+{% endblock %}
