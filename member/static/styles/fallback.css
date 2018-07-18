@@ -1,3 +1,4 @@
+{% load static %}
 /* -------------------------------------------------------
 
 	Description: Web 2.0 Login Form
@@ -84,7 +85,7 @@ input {
 /* ------- Login Form ------- */
 
 form, .welcome {
-	background: url(images/form-bg.png) top left no-repeat;
+	background: url('/static/images/form-bg.png') top left no-repeat;
 	width: 524px;
 	height: 262px;
 	padding-top: 1px;
@@ -126,11 +127,11 @@ form, .welcome {
 	float:left;
 	margin-top: 10px;
 	margin-left: 35px;
-	background: url(images/username-field.png) center left no-repeat;
+	background: url('/static/images/username-field.png') center left no-repeat;
 }
 
 .username-field:hover {
-	background: url(images/username-field-hover.png) center left no-repeat;
+	background: url('/static/images/username-field-hover.png') center left no-repeat;
 }
 
 .password-field {
@@ -139,11 +140,11 @@ form, .welcome {
 	float:left;
 	margin-top: 10px;
 	margin-left: 22px;
-	background: url(images/password-field.png) center left no-repeat;
+	background: url('/static/images/password-field.png') center left no-repeat;
 }
 
 .password-field:hover {
-	background: url(images/password-field-hover.png) center left no-repeat;	
+	background: url('/static/images/password-field-hover.png') center left no-repeat;	
 }
 
 input[type="text"], input[type="password"] {
@@ -210,7 +211,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover, input[type="submit"]:focus {
-	background: url(images/go-hover.png) top left no-repeat;
+	background: url('/static/images/go-hover.png') top left no-repeat;
 }
 
 .home {
@@ -224,7 +225,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 .home:hover, .home:focus {
-	background: url(images/go-hover.png) top left no-repeat;
+	background: url('/static/images/go-hover.png') top left no-repeat;
 }
 
 .home a, .home a:hover, .home a:focus {
@@ -237,7 +238,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	margin-top: 50px;
 	width: 500px;
 	height: 30px;
-	background: url(images/footer-bg.png) bottom center no-repeat;
+	background: url('/static/images/footer-bg.png') bottom center no-repeat;
 	text-align: center;
 	font-family: "Times New Roman", Times, Georgia;
 	font-weight: normal;
