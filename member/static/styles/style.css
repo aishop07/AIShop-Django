@@ -1,3 +1,4 @@
+
 /* -------------------------------------------------------
 
 	Description: Web 2.0 Login Form
@@ -96,6 +97,7 @@ form, .welcome {
 	height: 262px;
 	margin-top: 20px;
 	padding-top: 1px;
+	margin-left:38%;
 }
 
 .login, .welcome-user {
@@ -133,7 +135,7 @@ form, .welcome {
 	height: 38px;
 	float:left;
 	margin-top: 10px;
-	margin-left: 35px;
+	margin-left: 50px;
 	background: url('/static/images/username-field.png') center left no-repeat;
 }
 
@@ -172,7 +174,9 @@ input[type="text"], input[type="password"] {
 
 input[type="checkbox"] {
 	position: absolute;
-	left: -999px;
+	left: 785px;
+	top: 467px;
+	z-index: 1;
 }
 
 input[type="checkbox"] + label {
@@ -180,25 +184,25 @@ input[type="checkbox"] + label {
 	height: 24px;
 	float: left;
 	margin-top: 26px;
-	margin-left: 37px;
+	margin-left: 46px;
 	padding-left: 28px;
 	display: block;
 	position: relative;
 	line-height: 24px;
-	background: url('/static/images/checkbox-off.png') top left no-repeat;
+	/* background: url('/static/images/checkbox-off.png') top left no-repeat; */
 }
 
 input[type="checkbox"]:checked + label {
-	background: url('/static/images/checkbox-on.png') top left no-repeat;
+	/* background: url('/static/images/checkbox-on.png') top left no-repeat; */
 }
 
 input[type="checkbox"]:checked:hover + label, input[type="checkbox"]:checked:focus + label {
-	background: url('/static/images/checkbox-on-hover.png') top left no-repeat;
+	/* background: url('/static/images/checkbox-on-hover.png') top left no-repeat; */
 }
 
 input[type="checkbox"]:not(:checked):hover + label, input[type="checkbox"]:not(:checked):focus + label {
-	background: url('/static/images/checkbox-off-hover.png') top left no-repeat;
-}
+	/* background: url('/static/images/checkbox-off-hover.png') top left no-repeat; */
+} 
 
 /* -------------------------------------------------------------------------- */
 
@@ -208,13 +212,13 @@ input[type="checkbox"]:not(:checked):hover + label, input[type="checkbox"]:not(:
 	margin-top: 26px;
 	margin-left: 0;
 	color: #cccccc;
-	line-height: 24px;
+	line-height: 24px; 
 }
 
 .forgot-usr-pwd a {
 	color: #cccccc;
 	text-decoration: none;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 .forgot-usr-pwd a:hover, .forgot-usr-pwd a:focus {
