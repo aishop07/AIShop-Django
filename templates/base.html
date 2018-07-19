@@ -71,13 +71,16 @@
 							<li><a class="show-1 templatemo_home" href="{% url 'home:index' %}">
                               <span class="fa fa-users"></span>
                                 首頁</a></li>
-							<li><a class="show-2 templatemo_page2" href="#">
+							<li><a class="show-2 templatemo_page2" href="{% url 'products:list' %}">
                               <span class="fa fa-camera"></span>
                           		 特價品清單</a></li>
               {% if request.COOKIES.name %}
               <li><a class="show-3 templatemo_page3" href="{% url 'member:logout' %}">
                   <span class="fa fa-cogs"></span>
                   登出</a></li>
+                  <li><a class="show-3 templatemo_page3" href="{% url 'products:index' %}">
+                    <span class="fa fa-cogs"></span>
+                    購買清單</a></li>
               {% else %}
               <li><a class="show-3 templatemo_page3" href="{% url 'member:login' %}">
                   <span class="fa fa-cogs"></span>
