@@ -174,8 +174,8 @@ input[type="text"], input[type="password"] {
 
 input[type="checkbox"] {
 	position: relative;
-	left: 40%;
-	top: 50%;
+	right: 87%;
+	top: 74%;
 	z-index: 1;
 }
 
