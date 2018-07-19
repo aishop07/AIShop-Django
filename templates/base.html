@@ -50,31 +50,46 @@
 					<li><a class="show-3 templatemo_page3" href="#">會員專區</a></li>
 					<li><a class="show-5 templatemo_page5" href="#">待填入</a></li>
 				</ul>
-			</div>
+      </div>
+
 			<div class="container">
 				<div class="row templatemo_gallerygap">
 					<div class="col-md-12 responsive-menu">
 						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>      
+             
 				        </a>
 					</div> <!-- /.col-md-12 -->
                     <div class="col-md-3 col-sm-12">
-                    	<a href="#"><img src="{% static 'images/templatemo_logo.jpg'%}" alt="Polygon HTML5 Template"></a>
+                      <a href="#"><img src="{% static 'images/templatemo_logo.jpg'%}" alt="Polygon HTML5 Template">
+                      </a>
+                            {% if request.COOKIES.name %}
+                    <div>{{ request.COOKIES.name}} 你好!</div>
+                    {% endif %}
                     </div>
+                    
 					<div class="col-md-9 main_menu">
+            
 						<ul>
-							<li><a class="show-1 templatemo_home" href="#">
+              
+							<li><a class="show-1 templatemo_home" href="{% url 'home:index' %}">
                               <span class="fa fa-users"></span>
                                 首頁</a></li>
 							<li><a class="show-2 templatemo_page2" href="#">
                               <span class="fa fa-camera"></span>
                           		 特價品清單</a></li>
-							<li><a class="show-3 templatemo_page3" href="{% url 'member:login' %}">
-                            	<span class="fa fa-cogs"></span>
-                            	會員專區</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">
+              {% if request.COOKIES.name %}
+              <li><a class="show-3 templatemo_page3" href="{% url 'member:logout' %}">
+                  <span class="fa fa-cogs"></span>
+                  登出</a></li>
+              {% else %}
+              <li><a class="show-3 templatemo_page3" href="{% url 'member:login' %}">
+                  <span class="fa fa-cogs"></span>
+                  登入</a></li>
+              {% endif %}
+							<li><a class="show-5 templatemo_page5" href="{% url 'member:index' %}">
                             	<span class="fa fa-envelope"></span>
-                                待填入</a></li>
+                              會員專區</a></li>
 						</ul>
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+      <form method="POST" >
+            {%csrf_token%}
+                <div class="login">忘記密碼?</div>
+                <div class="username-text">電子郵件</div>             
+                <div class="password-field">
+                    <input type="password" class="form-control" name="useremail" id="useremail" placeholder="Email" />
+                </div>
+            
+        
+                <input type="submit" name="submit" value="GO"  />
+            </form>
+{% endblock %}
