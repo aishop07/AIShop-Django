@@ -173,9 +173,9 @@ input[type="text"], input[type="password"] {
 /* If Javascript isn't available this doesn't work for Internet Explorer 6-8 */
 
 input[type="checkbox"] {
-	position: absolute;
-	left: 785px;
-	top: 467px;
+	position: relative;
+	left: 40%;
+	top: 50%;
 	z-index: 1;
 }
 
