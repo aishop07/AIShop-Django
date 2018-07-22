@@ -31,7 +31,7 @@ class MemberViewSet(viewsets.ModelViewSet):
     serializer_class = MemberSerializer
 
 def index(request):
-    orders = Orders.objects.filter(user_name=str(request.COOKIES['name'])).order_by('-datetime')
+    orders = list(Orders.objects.filter(user_name=str(request.COOKIES['name'])).order_by('-datetime').values())
     
     
     return render(request, 'products/index.html', locals())
